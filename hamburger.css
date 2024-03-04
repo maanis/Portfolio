@@ -1,0 +1,96 @@
+:root {
+    --bgcolor: white;
+    --primary-color: #7e22ce;
+    --head-text: black;
+    --sub-text: rgb(111, 110, 110);
+    --about-bg: linear-gradient(to right, rgb(255, 255, 255), rgba(233, 231, 231, 0.295), rgba(188, 185, 185, 0.238));
+    --sec-bg: #f1f1f1;
+    --img-invert:invert(0);
+    --neumorphism-odd:  10px 10px 10px -1px rgba(0, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+    --neumorphism-even:inset 10px 10px 10px -1px rgba(0, 99, 169, 0.16),
+    inset -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+    --sidebar-bg-color:rgba(255, 255, 255, 0.2);
+    --sidebar-box-shadow:5px 0 15px rgba(128, 128, 128, 0.364);
+    
+}
+
+:root .dark-mode {
+    --bgcolor: #181818;
+    --primary-color: #f5d888;
+    --head-text: white;
+    --sub-text: #b3b3b3;
+    --about-bg: linear-gradient(360deg, #1C1C1C 20%, #494949 360%);
+    --sec-bg: #282828;
+    --boxshadow:1px 5px 16px rgba(36, 35, 35, 0.697);
+    --img-invert:invert(1);
+    --neumorphism-odd: -3px -3px 8px rgba(255, 255, 255, 0.144), 
+                       3px 3px 14px rgb(0, 0, 0);
+    --neumorphism-even: inset 5px 5px 20px rgba(0, 0, 0, 0.862),  
+                        inset -5px -5px 5px rgba(110, 108, 108, 0.473);
+    --sidebar-bg-color:rgba(43, 42, 42, 0.627);
+    --sidebar-box-shadow:5px 0 18px rgba(0, 0, 0, 0.686);
+}
+
+
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 60%;
+    left: -100%;
+    top: 0;
+    background-color: var(--sidebar-bg-color);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    box-shadow: var(--sidebar-box-shadow);
+    padding: 45px;
+    display: flex;
+    z-index: 999;
+    transition: .6s;
+}
+.sidebar i{
+    font-size: 40px;
+}
+.sidebar a{
+    text-decoration: none;
+
+}
+.sidebar a li{
+    font-size: 20px;
+    color: var(--head-text);
+    font-weight: 550;
+    list-style-type: none;
+    /* background-color: blueviolet; */
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.sidebar i:hover{
+    background: none;
+    color: var(--head-text);
+}
+
+.sidebar a:hover li{
+    color: var(--bgcolor);
+    background-color: var(--primary-color);
+}
+/* label i:hover{
+    color: black;
+    background: none;
+    /* font-size: 20px; */
+
+
+@media only screen and (max-width: 890px) {
+    .nav-items .windows-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+@media only screen and (max-width: 550px){
+.sidebar{
+    width: 75%;
+}
+}

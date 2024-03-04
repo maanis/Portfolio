@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+.backdrop{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+.seperation{
+    /* width: 100%; */
+    height: 2px;
+    background-color: #807e7e;
+    /* position: relative; */
+    /* z-index: 14; */
+
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/homebg_11zon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.gradient{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.75;
+}
+.navbar{
+    z-index: 12;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    height: 80px;
+}
+.nav-logo img{
+    width: 45px;
+}
+.sidebar{
+    gap: 26px;
+}
+.nav-items .windows-nav{
+    display: flex;
+    gap: 30px;
+}
+.nav-items .windows-nav li{
+    list-style: none;
+}
+.nav-items .windows-nav li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-items .windows-nav li a::after{
+    content: '';
+    background: #7e22ce;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: all 0.5s ease;
+}
+.nav-items .windows-nav li a:hover::after{
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    z-index: 1;
+    height: calc(100vh - 82px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    width: 80vw;
+    /* background-color: red; */
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.name-sec{
+    font-size: 22px;
+}
+.typing-text{
+    font-size: 70px;
+    font-weight: lighter;
+}
+span{
+    font-weight: 650;
+    color: #7e22ce;
+}
+.social-medias{
+    display: flex;
+    justify-content: center;
+}
+.social-medias .logo{
+    filter: invert(1);
+    width: 45px;
+    margin:8px 12px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.social-medias .logo:hover{
+    transform: scale(1.2);
+}
+
+.btn button{
+    background: transparent;
+    padding: 12px 22px;
+    font-weight: 550;
+    border: none;
+    border: 1px solid white;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn button:hover{
+    background-color: rgba(128, 128, 128, 0.299);
+    
+}
+
+/* ------------media queries-------------- */
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        width: 100%;
+        padding: 0 28px;
+    }
+
+    .nav-items ul li a{
+        font-size: 14px;
+    }
+    .name-sec{
+        font-size: 18px;
+    }
+    .bio-sec{
+        font-size: 12px;
+    }
+    .typing-text{
+        font-size: 45px;
+    }
+
+    .social-medias .logo{
+        width: 37px;
+        margin: 4px 6px;
+    }
+
+    .btn button{
+        padding: 8px 16px;
+
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .navbar{
+        /* flex-direction: column; */
+        /* height: 150px; */
+        align-items: center;
+        /* justify-content: space-evenly; */
+    }
+    .nav-logo img{
+        width: 28px;
+    }
+    .main{
+        height: 55vh;
+        gap: 10px;
+    }
+    .typing-text{
+        font-size: 40px;
+    }
+    .nav-items ul li a{
+        font-size: 3.6vw;
+    }
+    .main{
+        width: 95vw;
+
+    }    
+    .social-medias .logo{
+        width: 32px;
+        margin: 2px 6px;
+    }
+    .btn button{
+        padding: 10px 18px;
+        font-size: 18px;
+        margin-top: 8px;
+    }
+}
+
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 60%;
+    left: -100%;
+    background-color: rgba(43, 42, 42, 0.836);
+    backdrop-filter: blur(12px);
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    box-shadow: 5px 0 18px rgb(0, 0, 0);
+    padding: 45px;
+    transition: .2s;
+}
+.sidebar a{
+    text-decoration: none;
+
+}
+.sidebar a li{
+    font-size: 20px;
+    color: white;
+    font-weight: 550;
+    list-style-type: none;
+    /* background-color: blueviolet; */
+    padding: 12px;
+    border-radius: 8px;
+}
+.sidebar li{
+    list-style-type: none;
+}
+.sidebar i:hover{
+    background: none;
+    color: black;
+}
+.hamburger{
+    display: none;
+}
+.sidebar a:hover li{
+    color: white;
+    background-color: rebeccapurple;
+}
+.hamburger img, .sidebar img{
+    filter: invert();
+}
+
+@media only screen and (max-width: 890px) {
+    .nav-items .windows-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+@media only screen and (max-width: 550px){
+    .sidebar{
+        width: 75%;
+    }
+    }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANISH'S | PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="backdrop">
+            <div class="gradient"></div>
+
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <img src="/assets/nav-loggo.png" alt="">
+                </div>
+                <div class="nav-items">
+                    <ul class="windows-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="/about.html#about">About Me</a></li>
+                        <li><a href="/about.html#services">Services</a></li>
+                        <li><a href="/about.html#skills">Skills</a></li>
+                        <li><a href="/about.html#education">Education</a></li>
+                        <li><a href="/about.html#contact">Contact</a></li>
+                    </ul>
+                    <ul class="sidebar">
+                        <li onclick="hideSidebar()"><a href="#about"><img src="/assets/logo/cross.png" alt="" width="40px"></a></li>
+                        <a href="/index.html">
+                            <li onclick="hideSidebar()">Home</li>
+                        </a>
+                        <a href="/about.html#about">
+                            <li onclick="hideSidebar()">About Me</li>
+                        </a>
+                        <a href="/about.html#services">
+                            <li onclick="hideSidebar()">Services</li>
+                        </a>
+                        <a href="/about.html#skills">
+                            <li onclick="hideSidebar()">Skills</li>
+                        </a>
+                        <a href="/about.html#education">
+                            <li onclick="hideSidebar()">Education</li>
+                        </a>
+                        <a href="/about.html#contact">
+                            <li onclick="hideSidebar()">Contact</li>
+                        </a>
+                    </ul>
+                    <div class="hamburger">
+                        <img onclick="showSidebar()" src="/assets/logo/burger-menu-svgrepo-com.svg" alt="" width="28px">
+                    </div>
+                </div>
+            </nav>
+            <!-- <hr> -->
+            <div class="seperation"></div>
+            <div class="main" id="home">
+                <div class="name-sec">
+                    I'm Manish
+                </div>
+                <div class="bio-sec">
+                    who love's to slayyy!
+                </div>
+                <div class="typing-text">
+                    I Am <span class="auto-type"></span>
+                </div>
+                <div class="social-medias">
+                    <a href="https://www.facebook.com/profile.php?id=100016905452286"><img src="/assets/logo/fb.svg" alt="" class="logo"></a>
+                    <a href="https://www.instagram.com/ma.nizzz/?hl=en"><img src="/assets/logo/ig.svg" alt="" class="logo"></a>
+                    <a href="https://github.com/maanis"><img src="/assets/logo/git.svg" alt="" class="logo"></a>
+                    <a href="https://twitter.com/manizzz_fr"><img src="/assets/logo/twitter.svg" alt="" class="logo"></a>
+                </div>
+                <div class="btn">
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["A Developer", "A Designer", "An Editor"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.left = '0'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.left = '-80%'
+        }
+    </script>
+</body>
+
+</html>

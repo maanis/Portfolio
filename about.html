@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="/assets/nav-loggo.png" alt="">
+        </div>
+        <div class="nav-items">
+            <ul class="windows-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#about"><i class="fa-solid fa-xmark"></i></a></li>
+                <a href="/index.html"><li onclick="hideSidebar()">Home</li></a>
+                <a href="#"><li onclick="hideSidebar()">About Me</li></a>
+                <a href="#services"><li onclick="hideSidebar()">Services</li></a>
+                <a href="#skills"><li onclick="hideSidebar()">Skills</li></a>
+                <a href="#education"><li onclick="hideSidebar()">Education</li></a>
+                <a href="#contact"><li onclick="hideSidebar()">Contact</li></a>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <img onclick="showSidebar()" src="/assets/logo/burger-menu-svgrepo-com.svg" alt="" width="28px">
+        </div>
+        <div class="dark-toggle">
+            <label for="toggle">
+                <input class="check-box" type="checkbox" name="toggle" id="toggle">
+                <img src="/assets/logo/sun.png" alt="" class="sun">
+                <img src="/assets/logo/moon.png" alt="" class="moon">
+            </label>
+        </div>
+    </nav>
+
+    <!-------------About Section---------- -->
+
+    <div id="about">
+        <div class="heading"><span class="about-heading">ABOUT ME</span></div>
+
+        <section class="sec-1">
+            <div class="sec-a">
+                <div class="pre-name">Hey I'm</div>
+                <div class="name color">Manish <span class="color">Jha</span></div>
+                <div class="loc">
+                    <img src="/assets/logo/location-sign-svgrepo-com.svg" alt="">
+                    <p>Mumbai, India</p>
+                </div>
+                <div class="bio">
+                    Passionate about creating engaging and user-friendly web experiences, I am a frontend web developer eager to kickstart my career in the industry.
+                </div>
+                <div class="specs flex">
+                    <div class="dev flex">
+                        <img src="/assets/logo/developer.png" alt="" width="45px">
+                        <p>Front-End Dev</p>
+                    </div>
+                    <div class="photo-ed flex">
+                        <img src="/assets/logo/editor (2).png" alt="" width="58px">
+                        <p>Photo Editor</p>
+                    </div>
+                    <div class="video-ed flex">
+                        <img src="/assets/logo/vid-editor.png" alt="" width="45px">
+                        <p>Video Editor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-b">
+                <div class="sec-b-images">
+
+                    <img src="/assets/logo/pattern.svg" class="image-a" id="about-img" width="350px">
+                    <img src="/assets/main.webp" alt="" class="image-b">
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-------------Services Section---------- -->
+
+    <section class="sec-2" id="services">
+        <div class="sec-2-main">
+            <div class="sec-2-heading">
+                <p class="head-1">What actually I do</p>
+                <p class="head-2">My <span class="color">Services</span></p>
+            </div>
+            <div class="sec-2-content">
+                <div class="sec flex">
+                    <img src="/assets/logo/webdesign.png.png" alt="">
+                    <div>
+                        <h4 class="name">Web Designer</h4>
+                        <p class="bio">
+                            I have a strong foundation in HTML, CSS, and JavaScript, and I am eager to expand my skills and take on new challenges. I am dedicated to creating user-friendly designs that are both aesthetically pleasing and easy to navigate.
+                        </p>
+                    </div>
+                </div>
+                <div class="sec sec-even flex">
+                    <img src="/assets/logo/ui.svg" alt="">
+                    <div>
+                        <h4 class="name">UI/UX Designer</h4>
+                        <p class="bio">
+                            I am excited about the opportunity to learn and grow in this dynamic field. Please take a moment to view my portfolio, and I look forward to discussing how we can collaborate to create impactful designs.
+                        </p>
+                    </div>
+                </div>
+                <div class="sec flex">
+                    <img src="/assets/logo/photoeditor.png" alt="">
+                    <div>
+                        <h4 class="name">Photo Editor</h4>
+                        <p class="bio">
+                            Skilled in Adobe Photoshop and Lightroom,  I stay updated with the latest editing trends and techniques to ensure high-quality results.Let's collaborate to enhance your photos and bring your vision to life. View my portfolio and reach out to discuss how we can work together.
+                        </p>
+                    </div>
+                </div>
+                <div class="sec sec-even flex">
+                    <img src="/assets/logo/videoeditor.png" alt="">
+                    <div>
+                        <h4 class="name">Video Editor</h4>
+                        <p class="bio">
+                            I have a basic understanding of video editing software and techniques, and I am eager to expand my skills and knowledge. I am dedicated to delivering high-quality work that meets the needs of clients and viewers alike.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----------skills Section---------- -->
+
+    <section class="skills" id="skills">
+
+
+        <div class="skill-head">
+            <p class="head-2">My <span class="color">Skills</span></p>
+        </div>
+
+        <div class="slills-flex flex">
+
+            <div class="skill-main">
+
+                <div class="skill-sec-head">
+                    Technical Skills
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-sec">
+                        <p>HTML</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-sec">
+                        <p>CSS</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-sec">
+                        <p>PYTHON</p>
+                        <p>55%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="python"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-sec">
+                        <p>C++</p>
+                        <p>50%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="cpp"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-sec">
+                        <p>JS</p>
+                        <p>10%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="js"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-main skill-main-b">
+
+                <div class="skill-sec-head">
+                    Other Skills
+                </div>
+                <div class="other-skill-main">
+
+                    <div class="other-skill communication">
+                        <img src="/assets/logo/communication.png" alt="">
+                        <p>Communication</p>
+                    </div>
+                    <div class="other-skill photoshop">
+                        <img src="/assets/logo/photoshop.svg" alt="">
+                        <p>PhotoShop</p>
+                    </div>
+                    <div class="other-skill logo-design">
+                        <img src="/assets/logo/logodesign.png" alt="">
+                        <p>Logo Design</p>
+                    </div>
+                    <div class="other-skill figma">
+                        <img src="/assets/logo/figma.svg" alt="">
+                        <p>Figma</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------education Section---------- -->
+
+    <section class="wrapper" id="education">
+        <div class="timeline">
+
+            <div class="education">
+                <div class="need-gap">
+                    <p class="head-2 wrapper-heading">My <span class="color">Education</span></p>
+                    <div class="wrapper-line"></div>
+                </div>
+                <div class="row row1">
+                    <small class="year">2000-2022</small>
+                    <div class="row-head">
+                        <p class="row-name">High School</p>
+                        <p><i><small>93.34%</small></i></p>
+                    </div>
+                    <p class="row-bio">I completed my schooling at Andrew's High School, where I first discovered my love for Tech.My education at Andrews laid a strong foundation for my future academic and professional endeavors in Tech, and I am grateful for the experiences and knowledge gained during this time.</p>
+                </div>
+
+                <div class="row row2">
+                    <small class="year">2022-2025</small>
+                    <div class="row-head">
+                        <p class="row-name">Bachelors</p>
+                        <p><i><small>N.A</small></i></p>
+                    </div>
+                    <p class="row-bio">I then pursued my bachelor's degree in CS at YCMOU, where I gained a solid foundation in Technical Skills. During my undergraduate studies, I engaged in Extracurricular Activities or Projects that allowed me to apply my knowledge in practical settings. My bachelor's degree has been instrumental in shaping my professional journey in Tech.  </p>
+                </div>
+                <div class="row row3">
+                    <small class="year">2025-2027</small>
+                    <div class="row-head">
+                        <p class="row-name">Masters</p>
+                        <p><i><small>N.A</small></i></p>
+                    </div>
+                    <p class="row-bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis consectetur
+                        accusantium ratione maxime. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+                        illo, ipsam reiciendis molestias earum saepe error quisquam cumque adipisci maiores. Eveniet,
+                        sequi quas.</p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-------------Contact Section---------- -->
+
+    <section class="contact contact-flex" id="contact">
+
+        <div class="contact-sec-a">
+            <div class="contact-heading">Contact Information</div>
+            <div class="contact-bio bio">Fill up the form and i,ll never get back to you kiddo.</div>
+            <div class="contact-sec-items-wrapper">
+                <i class="icons fa-solid fa-phone"></i>
+                <div class="contact-sec-items">
+                    Phone: +91 62911****
+                </div>
+            </div>
+            <div class="contact-sec-items-wrapper">
+                <i class="icons fa-regular fa-paper-plane"></i>
+                <div class="contact-sec-items">
+                    Email: manishjhacr7@gmail.com
+                </div>
+            </div>
+            <div class="contact-sec-items-wrapper">
+                <i class="icons fa-solid fa-globe"></i>
+                <div class="contact-sec-items">
+                    Website: <a href="/index.html">man.nizz</a>
+                </div>
+            </div>
+            <div class="contact-sec-social-media">
+                <a href="https://github.com/maanis"><i class="icons fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/ma.nizzz/?hl=en"><i class="icons fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100016905452286"><i class="icons fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/manizzz_fr"><i class="icons fa-brands fa-square-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-sec-b">
+            <div class="seperation"></div>
+            <div class="contact-container">
+                <div class="contact-heading sec-b-heading">Send Me A Message</div>
+                <div class="input-items name-input ">
+                    <input type="name" placeholder="First Name">
+                    <input type="name" placeholder="Last Name">
+                </div>
+                <div class="input-items input-row2">
+                    <input type="email" placeholder="Email">
+                    <input type="number" placeholder="Number">
+                </div>
+                <div class="input-items textarea">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Write Your Message"></textarea>
+                </div>
+                <div class="submit-button">
+                    <button>Send Message</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <div class="contact-sec-social-media">
+            <a href="https://github.com/maanis"><i class="icons fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/ma.nizzz/?hl=en"><i class="icons fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100016905452286"><i class="icons fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/manizzz_fr"><i class="icons fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <div class="nav-items-footer">
+            <ul class="windows-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright-sec">
+            <p>&copy; 2024 ma.nizzz. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- ---------------footer------------- -->
+
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.left = '0'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.left = '-80%'
+    }
+
+    const toggle_mode = document.querySelector('#toggle')
+
+    toggle_mode.addEventListener('change', () => {
+        if(toggle_mode.checked){
+            document.body.classList.add('dark-mode')
+            document.getElementById('about-img').src='/assets/logo/pattern-dark.svg'
+        }else{
+            document.body.classList.remove('dark-mode')
+            document.getElementById('about-img').src='/assets/logo/pattern.svg'
+        }
+    })
+
+</script>
+
+</body>
+
+
+</html>
