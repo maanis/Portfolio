@@ -759,7 +759,7 @@ ul li a,
     height: 26px;
     width: 26px;
     /* background-color: var(--primary-color); */
-    background-image: url(/assets/logo/school.png);
+    background-image: url(assets/logo/school.png);
     background-position: center;
     background-size: cover;
     filter: var(--img-invert);
@@ -776,7 +776,7 @@ ul li a,
     height: 26px;
     width: 26px;
     /* background-color: var(--primary-color); */
-    background-image: url(/assets/logo/college.png);
+    background-image: url(assets/logo/college.png);
     background-position: center;
     background-size: cover;
     /* border-radius: 50%; */
@@ -793,7 +793,7 @@ ul li a,
     height: 26px;
     width: 26px;
     /* background-color: var(--primary-color); */
-    background-image: url(/assets/logo/masters.png);
+    background-image: url(assets/logo/masters.png);
     background-position: center;
     background-size: cover;
     filter: var(--img-invert);
