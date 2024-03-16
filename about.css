@@ -570,7 +570,7 @@ ul li a,
 }
 
 .skill-bar .bar .python {
-    width: 55%;
+    width: 65%;
     animation: python 3s ease;
 }
 
@@ -580,7 +580,7 @@ ul li a,
     }
 
     100% {
-        width: 55%;
+        width: 65%;
     }
 }
 
@@ -600,7 +600,7 @@ ul li a,
 }
 
 .skill-bar .bar .js {
-    width: 10%;
+    width: 40%;
     animation: js 3s ease;
 }
 
@@ -610,7 +610,7 @@ ul li a,
     }
 
     100% {
-        width: 10%;
+        width: 40%;
     }
 }
 
