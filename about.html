@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="hamburger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>ma.nizzz</title>
 </head>
 
 <body>
@@ -29,12 +30,24 @@
             </ul>
             <ul class="sidebar">
                 <li onclick="hideSidebar()"><a href="#about"><i class="fa-solid fa-xmark"></i></a></li>
-                <a href="index.html"><li onclick="hideSidebar()">Home</li></a>
-                <a href="#"><li onclick="hideSidebar()">About Me</li></a>
-                <a href="#services"><li onclick="hideSidebar()">Services</li></a>
-                <a href="#skills"><li onclick="hideSidebar()">Skills</li></a>
-                <a href="#education"><li onclick="hideSidebar()">Education</li></a>
-                <a href="#contact"><li onclick="hideSidebar()">Contact</li></a>
+                <a href="index.html">
+                    <li onclick="hideSidebar()">Home</li>
+                </a>
+                <a href="#">
+                    <li onclick="hideSidebar()">About Me</li>
+                </a>
+                <a href="#services">
+                    <li onclick="hideSidebar()">Services</li>
+                </a>
+                <a href="#skills">
+                    <li onclick="hideSidebar()">Skills</li>
+                </a>
+                <a href="#education">
+                    <li onclick="hideSidebar()">Education</li>
+                </a>
+                <a href="#contact">
+                    <li onclick="hideSidebar()">Contact</li>
+                </a>
             </ul>
         </div>
         <div class="hamburger">
@@ -52,10 +65,10 @@
     <!-------------About Section---------- -->
 
     <div id="about">
-        <div class="heading"><span class="about-heading">ABOUT ME</span></div>
+        <div class="heading"  data-aos="fade-up" data-aos-duration="1000"><span class="about-heading">ABOUT ME</span></div>
 
         <section class="sec-1">
-            <div class="sec-a">
+            <div class="sec-a" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                 <div class="pre-name">Hey I'm</div>
                 <div class="name color">Manish <span class="color">Jha</span></div>
                 <div class="loc">
@@ -63,7 +76,8 @@
                     <p>Mumbai, India</p>
                 </div>
                 <div class="bio">
-                    Passionate about creating engaging and user-friendly web experiences, I am a frontend web developer eager to kickstart my career in the industry.
+                    Passionate about creating engaging and user-friendly web experiences, I am a frontend web developer
+                    eager to kickstart my career in the industry.
                 </div>
                 <div class="specs flex">
                     <div class="dev flex">
@@ -80,9 +94,8 @@
                     </div>
                 </div>
             </div>
-            <div class="sec-b">
-                <div class="sec-b-images">
-
+            <div class="sec-b" >
+                <div class="sec-b-images" data-aos="fade" data-aos-duration="1000" data-aos-delay="900">
                     <img src="assets/logo/pattern.svg" class="image-a" id="about-img" width="350px">
                     <img src="assets/main.webp" alt="" class="image-b">
 
@@ -100,39 +113,47 @@
                 <p class="head-2">My <span class="color">Services</span></p>
             </div>
             <div class="sec-2-content">
-                <div class="sec flex">
+                <div class="sec flex" data-aos="fade-right" data-aos-offset="220" data-aos-duration="800">
                     <img src="assets/logo/webdesign.png.png" alt="">
                     <div>
                         <h4 class="name">Web Designer</h4>
                         <p class="bio">
-                            I have a strong foundation in HTML, CSS, and JavaScript, and I am eager to expand my skills and take on new challenges. I am dedicated to creating user-friendly designs that are both aesthetically pleasing and easy to navigate.
+                            I have a strong foundation in HTML, CSS, and JavaScript, and I am eager to expand my skills
+                            and take on new challenges. I am dedicated to creating user-friendly designs that are both
+                            aesthetically pleasing and easy to navigate.
                         </p>
                     </div>
                 </div>
-                <div class="sec sec-even flex">
+                <div class="sec sec-even flex" data-aos="fade-right" data-aos-offset="240" data-aos-duration="800">
                     <img src="assets/logo/ui.svg" alt="">
                     <div>
                         <h4 class="name">UI/UX Designer</h4>
                         <p class="bio">
-                            I am excited about the opportunity to learn and grow in this dynamic field. Please take a moment to view my portfolio, and I look forward to discussing how we can collaborate to create impactful designs.
+                            I am excited about the opportunity to learn and grow in this dynamic field. Please take a
+                            moment to view my portfolio, and I look forward to discussing how we can collaborate to
+                            create impactful designs.
                         </p>
                     </div>
                 </div>
-                <div class="sec flex">
+                <div class="sec flex" data-aos="fade-right" data-aos-offset="220" data-aos-duration="800">
                     <img src="assets/logo/photoeditor.png" alt="">
                     <div>
                         <h4 class="name">Photo Editor</h4>
                         <p class="bio">
-                            Skilled in Adobe Photoshop and Lightroom,  I stay updated with the latest editing trends and techniques to ensure high-quality results.Let's collaborate to enhance your photos and bring your vision to life. View my portfolio and reach out to discuss how we can work together.
+                            Skilled in Adobe Photoshop and Lightroom, I stay updated with the latest editing trends and
+                            techniques to ensure high-quality results.Let's collaborate to enhance your photos and bring
+                            your vision to life. View my portfolio and reach out to discuss how we can work together.
                         </p>
                     </div>
                 </div>
-                <div class="sec sec-even flex">
+                <div class="sec sec-even flex" data-aos="fade-right" data-aos-offset="200" data-aos-duration="800">
                     <img src="assets/logo/videoeditor.png" alt="">
                     <div>
                         <h4 class="name">Video Editor</h4>
                         <p class="bio">
-                            I have a basic understanding of video editing software and techniques, and I am eager to expand my skills and knowledge. I am dedicated to delivering high-quality work that meets the needs of clients and viewers alike.
+                            I have a basic understanding of video editing software and techniques, and I am eager to
+                            expand my skills and knowledge. I am dedicated to delivering high-quality work that meets
+                            the needs of clients and viewers alike.
                         </p>
                     </div>
                 </div>
@@ -154,7 +175,7 @@
 
             <div class="skill-main">
 
-                <div class="skill-sec-head">
+                <div class="skill-sec-head" data-aos="zoom-in" data-aos-duration="800">
                     Technical Skills
                 </div>
 
@@ -164,7 +185,7 @@
                         <p>90%</p>
                     </div>
                     <div class="bar">
-                        <span class="html"></span>
+                        <span class="html" data-aos="flip-right"  data-aos-offset="140" data-aos-duration="1000"></span>
                     </div>
                 </div>
 
@@ -174,7 +195,7 @@
                         <p>80%</p>
                     </div>
                     <div class="bar">
-                        <span class="css"></span>
+                        <span class="css" data-aos="flip-right" data-aos-offset="180" data-aos-duration="1000"></span>
                     </div>
                 </div>
 
@@ -184,7 +205,7 @@
                         <p>65%</p>
                     </div>
                     <div class="bar">
-                        <span class="python"></span>
+                        <span class="python" data-aos="flip-right" data-aos-offset="200" data-aos-duration="1000"></span>
                     </div>
                 </div>
 
@@ -194,7 +215,7 @@
                         <p>50%</p>
                     </div>
                     <div class="bar">
-                        <span class="cpp"></span>
+                        <span class="cpp" data-aos="flip-right" data-aos-offset="160" data-aos-duration="900"></span>
                     </div>
                 </div>
 
@@ -204,31 +225,31 @@
                         <p>40%</p>
                     </div>
                     <div class="bar">
-                        <span class="js"></span>
+                        <span class="js" data-aos="flip-right" data-aos-offset="140" data-aos-duration="800"></span>
                     </div>
                 </div>
             </div>
 
             <div class="skill-main skill-main-b">
 
-                <div class="skill-sec-head">
+                <div class="skill-sec-head" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
                     Relevant Skills
                 </div>
                 <div class="other-skill-main">
 
-                    <div class="other-skill communication">
+                    <div class="other-skill communication" data-aos="fade-down" data-aos-delay="400" data-aos-duration="900">
                         <img src="assets/logo/communication.png" alt="">
                         <p>Communication</p>
                     </div>
-                    <div class="other-skill photoshop">
+                    <div class="other-skill photoshop" data-aos="fade-down" data-aos-delay="800" data-aos-duration="900">
                         <img src="assets/logo/photoshop.svg" alt="">
                         <p>PhotoShop</p>
                     </div>
-                    <div class="other-skill logo-design">
+                    <div class="other-skill logo-design" data-aos="fade-up" data-aos-delay="800" data-aos-duration="900">
                         <img src="assets/logo/logodesign.png" alt="">
                         <p>Logo Design</p>
                     </div>
-                    <div class="other-skill figma">
+                    <div class="other-skill figma" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="900">
                         <img src="assets/logo/figma.svg" alt="">
                         <p>Figma</p>
                     </div>
@@ -244,27 +265,33 @@
 
             <div class="education">
                 <div class="need-gap">
-                    <p class="head-2 wrapper-heading">My <span class="color">Education</span></p>
+                    <p class="head-2 wrapper-heading" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">My <span class="color"> Education</span></p>
                     <div class="wrapper-line"></div>
                 </div>
-                <div class="row row1">
+                <div class="row row1" data-aos="fade-up" data-aos-offset="200" data-aos-duration="900">
                     <small class="year">2000-2022</small>
                     <div class="row-head">
                         <p class="row-name">High School</p>
                         <p><i><small>93.34%</small></i></p>
                     </div>
-                    <p class="row-bio">I completed my schooling at Andrew's High School, where I first discovered my love for Tech.My education at Andrews laid a strong foundation for my future academic and professional endeavors in Tech, and I am grateful for the experiences and knowledge gained during this time.</p>
+                    <p class="row-bio">I completed my schooling at Andrew's High School, where I first discovered my
+                        love for Tech.My education at Andrews laid a strong foundation for my future academic and
+                        professional endeavors in Tech, and I am grateful for the experiences and knowledge gained
+                        during this time.</p>
                 </div>
 
-                <div class="row row2">
+                <div class="row row2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="900">
                     <small class="year">2022-2025</small>
                     <div class="row-head">
                         <p class="row-name">Bachelors</p>
                         <p><i><small>N.A</small></i></p>
                     </div>
-                    <p class="row-bio">I then pursued my bachelor's degree in CS at YCMOU, where I gained a solid foundation in Technical Skills. During my undergraduate studies, I engaged in Extracurricular Activities or Projects that allowed me to apply my knowledge in practical settings. My bachelor's degree has been instrumental in shaping my professional journey in Tech.  </p>
+                    <p class="row-bio">I then pursued my bachelor's degree in CS at YCMOU, where I gained a solid
+                        foundation in Technical Skills. During my undergraduate studies, I engaged in Extracurricular
+                        Activities or Projects that allowed me to apply my knowledge in practical settings. My
+                        bachelor's degree has been instrumental in shaping my professional journey in Tech. </p>
                 </div>
-                <div class="row row1 row3">
+                <div class="row row1 row3" data-aos="fade-up" data-aos-offset="150" data-aos-duration="900">
                     <small class="year">2025-2027</small>
                     <div class="row-head">
                         <p class="row-name">Masters</p>
@@ -284,7 +311,7 @@
 
     <!-------------Contact Section---------- -->
 
-    <section class="contact contact-flex" id="contact">
+    <section class="contact contact-flex" id="contact" data-aos="zoom-in" data-aos-duration="1200"  data-aos-offset="260">
 
         <div class="contact-sec-a">
             <div class="contact-heading">Contact Information</div>
@@ -310,7 +337,8 @@
             <div class="contact-sec-social-media">
                 <a href="https://github.com/maanis"><i class="icons fa-brands fa-github"></i></a>
                 <a href="https://www.instagram.com/ma.nizzz/?hl=en"><i class="icons fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100016905452286"><i class="icons fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100016905452286"><i
+                        class="icons fa-brands fa-facebook"></i></a>
                 <a href="https://twitter.com/manizzz_fr"><i class="icons fa-brands fa-square-x-twitter"></i></a>
             </div>
         </div>
@@ -344,7 +372,8 @@
         <div class="contact-sec-social-media">
             <a href="https://github.com/maanis"><i class="icons fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/ma.nizzz/?hl=en"><i class="icons fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100016905452286"><i class="icons fa-brands fa-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100016905452286"><i
+                    class="icons fa-brands fa-facebook"></i></a>
             <a href="https://twitter.com/manizzz_fr"><i class="icons fa-brands fa-square-x-twitter"></i></a>
         </div>
         <div class="nav-items-footer">
@@ -366,38 +395,45 @@
     <!-- ---------------footer------------- -->
 
 
-<script>
-    function showSidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.left = '0'
-    }
-    function hideSidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.left = '-80%'
-    }
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-    const toggle_mode = document.querySelector('#toggle')
 
-    // toggle_mode.addEventListener('change', () => {
-    //     if(toggle_mode.checked){
-    //         document.body.classList.add('dark-mode')
-    //         document.getElementById('about-img').src='assets/logo/pattern-dark.svg'
-    //     }else{
-    //         document.body.classList.remove('dark-mode')
-    //         document.getElementById('about-img').src='assets/logo/pattern.svg'
-    //     }
-    // })
+    <script>
 
-    toggle_mode.addEventListener('click', ()=>{
-        document.body.classList.toggle('dark-mode')
-        if(toggle_mode.checked){
-            document.getElementById('about-img').src='assets/logo/pattern-dark.svg'
-        }else{
-            document.getElementById('about-img').src='assets/logo/pattern.svg'
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.left = '0'
         }
-    })
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.left = '-80%'
+        }
 
-</script>
+        const toggle_mode = document.querySelector('#toggle')
+
+        // toggle_mode.addEventListener('change', () => {
+        //     if(toggle_mode.checked){
+        //         document.body.classList.add('dark-mode')
+        //         document.getElementById('about-img').src='assets/logo/pattern-dark.svg'
+        //     }else{
+        //         document.body.classList.remove('dark-mode')
+        //         document.getElementById('about-img').src='assets/logo/pattern.svg'
+        //     }
+        // })
+
+        toggle_mode.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode')
+            if (toggle_mode.checked) {
+                document.getElementById('about-img').src = 'assets/logo/pattern-dark.svg'
+            } else {
+                document.getElementById('about-img').src = 'assets/logo/pattern.svg'
+            }
+        })
+
+    </script>
 
 </body>
 
