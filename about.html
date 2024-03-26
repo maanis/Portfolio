@@ -313,6 +313,13 @@
 
     <section class="contact contact-flex" id="contact" data-aos="zoom-in" data-aos-duration="1200"  data-aos-offset="260">
 
+        <div class="popup">
+            <div class="check"><img src="assets/logo/accept.png" alt=""></div>
+            <h2 class="contact-heading">Thank You</h2>
+            <p class="row-bio">Your message has been recieved sucessfully!</p>
+            <div class="submit-button"><button class="ok-btn" onclick="closePopUp()">ok</button></div>
+        </div>
+
         <div class="contact-sec-a">
             <div class="contact-heading">Contact Information</div>
             <div class="contact-bio bio">Fill up the form and i,ll never get back to you kiddo.</div>
@@ -359,14 +366,16 @@
                     <textarea name="" id="" cols="30" rows="5" placeholder="Write Your Message"></textarea>
                 </div>
                 <div class="submit-button">
-                    <button>Send Message</button>
+                    <button onclick="openPopUp()">Send Message</button>
                 </div>
+                
             </div>
         </div>
-
+        
 
     </section>
 
+    
 
     <footer>
         <div class="contact-sec-social-media">
@@ -391,6 +400,8 @@
             <p>&copy; 2024 ma.nizzz. All rights reserved</p>
         </div>
     </footer>
+
+    
 
     <!-- ---------------footer------------- -->
 
@@ -424,10 +435,18 @@
         })
 
         document.body.addEventListener("contextmenu", (e)=>{
-            e.preventDefault()
+            
         })
 
+        const popup = document.querySelector('.popup')
 
+        function openPopUp(){
+            popup.classList.add('open-popup')
+        }
+
+        function closePopUp(){
+            popup.classList.remove('open-popup')
+        }
 
     </script>
 
