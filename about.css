@@ -980,6 +980,7 @@ small {
 
 .input-items input {
     width: 50%;
+    outline: none;
     padding: 15px 0px 28px 14px;
     border-radius: 14px;
     box-shadow: var(--neumorphism-even);
@@ -995,6 +996,7 @@ textarea {
     background-color: var(--sec-bg);
     color: var(--head-text);
     border: none;
+    outline: none;
     resize: none;
 }
 
