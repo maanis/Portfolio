@@ -993,6 +993,7 @@ textarea {
     border-radius: 14px;
     box-shadow: var(--neumorphism-even);
     background-color: var(--sec-bg);
+    color: var(--head-text);
     border: none;
     resize: none;
 }
@@ -1033,7 +1034,7 @@ input{
     color: var(--head-text);
 }
 
-.popup{
+.popup, .popup-err{
     /* background-color: red; */
     display: flex;
     color: var(--head-text);
@@ -1046,6 +1047,7 @@ input{
     padding: 25px 0;
     gap: 8px;
     position: absolute;
+    /* top: 0; */
     top: 0;
     left: 50%;
     z-index: 12;
@@ -1058,6 +1060,11 @@ input{
     text-align: center;
 }
 .open-popup{
+    transform: translatex(-50%) translateY(-50%) scale(1);
+    top: 50%;
+    visibility: visible;
+}
+.open-popup-err{
     transform: translatex(-50%) translateY(-50%) scale(1);
     top: 50%;
     visibility: visible;
