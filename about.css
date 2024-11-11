@@ -330,7 +330,7 @@ ul li a,
 }
 
 .image-b {
-    transition: all 1s ease;
+    transition: right 1s ease;
 }
 
 @keyframes aboutanime {
